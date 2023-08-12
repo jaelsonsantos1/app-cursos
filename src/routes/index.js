@@ -20,14 +20,14 @@ export default function Routes() {
                 name="SignIn"
                 component={SignIn}
                 options={{
-                    HeaderShown: false
+                    headerShown: false
                 }}
             />
             <Stack.Screen
                 name="SignUp"
                 component={SingUp}
                 options={{
-                    HeaderShown: false
+                    headerShown: false
                 }}
             />
         </Stack.Navigator>
