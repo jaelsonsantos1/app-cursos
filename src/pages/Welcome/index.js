@@ -2,9 +2,9 @@ import {
     View,
     Text,
     Image,
+    TouchableOpacity
 } from 'react-native';
 
-import Button from '../../Components/Button';
 
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
@@ -50,16 +50,17 @@ export default function Welcome() {
                     Invista em si mesmo, torne-se uma versão melhor de você!
                 </Text>
 
-                {/* Botão para entrar no aplicativo */}              
-                <Button
-                    title={"Comece Agora!"}
-                    activate={true}
-                    width={'60%'}
-                    bottom={'15%'}
-                    action={() => {
-                    navigation.navigate('SignIn');
+                {/* Botão para entrar no aplicativo */}   
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        navigation.navigate('SignIn');
                     }}
-                /> 
+                >
+                    <Text style={styles.textButton}>
+                        Comece Agora!
+                    </Text>
+                </TouchableOpacity>           
             </View>
         </View>
     )

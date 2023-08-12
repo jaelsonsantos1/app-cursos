@@ -37,6 +37,20 @@ const styles = StyleSheet.create({
         fontSize: 12,
         marginTop: 35,
     },
+    button: {
+        position: 'absolute',
+        bottom: '15%',
+        backgroundColor: '#A5FC83',
+        height: 45,
+        width: '60%',
+        borderRadius: 39,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    textButton: {
+        fontSize: 12,
+        color: '#000',
+    },
 })
 
 export default styles;
